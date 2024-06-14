@@ -1,0 +1,99 @@
+body {
+    font-family: Serif, red-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: beige;
+}
+
+header h1 {
+    color: #333;
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+}
+
+header h1::before,
+header h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 5px;
+    background-color: #007BFF;
+}
+
+header h1::before {
+    left: -60px;
+}
+
+header h1::after {
+    right: -60px;
+}
+
+main p {
+    font-size: 16px;
+    color: #666;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+main p::before {
+    content: "→ ";
+    color: #007BFF;
+    font-weight: bold;
+}
+
+main p::after {
+    content: " ←";
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.button {
+    position: absolute;
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    position: relative;
+    display: block
+  }
+button {
+    display: block;
+    top: 50%;
+    border-raduis: 10px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0a0a23;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+button::before {
+    content: "🌟";
+    position: absolute;
+    left: -30px;
+}
+
+button::after {
+    content: "🌟";
+    position: absolute;
+    right: -30px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+button:active {
+    background-color: #3e8e41; 
+    box-shadow: 0 5px #666; 
+    transform: translateY(4px); 
+}
